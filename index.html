@@ -17,34 +17,24 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMhZj7z9qvhs8kcJ6D6t3h7jsKK4Gk16+/D57g" crossorigin="anonymous" />
 
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-		<link rel="stylesheet" href="./popup/popup.css" />
-		<link rel="stylesheet" href="./Loader/Loader.css" />
 		<link rel="manifest" href="/manifest.json" />
 	</head>
 	<body>
-		<div class="loader" id="loader">
-			<div class="main-content">
-				<div id="progressBarContainer">
-					<div id="progressBar"></div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
+		<div class="container" id="home">
 			<div class="navbar">
 				<div class="logo-outer">
 					<a href="/"> <img src="images/logo.png" class="logo" alt="Logo" /></a>
-					<a href="/"><span class="website-name">Collect your GamingTools</span></a>
+					<a href="#home"><span class="website-name">Collect your GamingTools</span></a>
 				</div>
 				<nav>
 					<ul>
-						<li><a href="./index.html">Home</a></li>
+						<li><a href="#home">Home</a></li>
 						<li><a href="./aboutus.html">About Us</a></li>
 						<li><a href="#controller">Game Controllers</a></li>
 						<li><a href="#vrsection">VR Accessories</a></li>
 						<li><a href="#keyboard">Gaming Keyboard</a></li>
 						<li><a href="#others">Others</a></li>
 
-						<li class="login"><a href="login/login.html">Login</a></li>
 						<li>
 							<label class="switch">
 								<input type="checkbox" id="theme-toggle" onchange="toggleTheme()" />
@@ -98,29 +88,6 @@
 				</div>
 			</section>
 
-			<!-- Pop-up for email registration  HTML Goes Here -->
-			<div id="popup" class="popup">
-				<div class="popup-content">
-					<div class="popup-left">
-						<img src="images/popup.png" alt="Gaming Tools Image" loading="lazy" />
-					</div>
-
-					<div class="popup-right">
-						<a href="# " class="close1-btn"> <img src="images/logo.png" class="logo1" alt="Logo" /></a>
-						<h1>Unlock the Ultimate Gaming Experience!</h1>
-						<h2 class="h2">Sign up for exclusive offers & updates</h2>
-						<p class="pop_up">Join our community and get upto <strong class="bold">30% off</strong> on your first deal</p>
-						<form id="emailForm">
-							<input type="email" id="email" placeholder="Enter your email" required />
-							<button type="submit" class="signup-btn1">Get 30% Off Now</button>
-						</form>
-						<a href="#" class="no-thanks close1-btn">No thanks</a>
-						<p class="terms">By signing up, you agree to our <a href="terms.html">Terms of Service</a> and <a href="PrivacyPolicy/PrivacyPolicy.html">Privacy Policy</a>.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Pop up HTML Ends here -->
 			<!-- PS4 Controller Section -->
 			<div class="row" id="controller">
 				<div class="col-1" data-aos="fade-right">
@@ -700,7 +667,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 		<script src="script.js"></script>
-		<script src="popup/popup.js"></script>
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -722,6 +688,5 @@
 		</script>
 		<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
-		<script src="./Loader/Loader.js"></script>
 	</body>
 </html>
