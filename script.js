@@ -466,17 +466,6 @@ function clearForm() {
 // Load the form data when the page is loaded
 window.onload = loadFormData;
 
-let cartItemCount = 0;
-
-const cartButtons = document.querySelectorAll("#cart-btn");
-cartButtons.forEach((button) => {
-	button.addEventListener("click", function () {
-		cartItemCount++; // Increment cart count
-		document.getElementById("cart-count").textContent = cartItemCount; // Update cart count display
-		alert("Item added to cart"); // Show alert
-	});
-});
-
 // Function to get the count from localStorage or initialize it
 function getVisitorCount() {
 	return localStorage.getItem("visitorCount") || 0;

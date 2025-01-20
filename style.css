@@ -227,60 +227,6 @@ button[type="submit"]:hover {
 	box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
 }
 
-.cart-button {
-	display: flex;
-	align-items: center;
-	background-color: #f0c14b;
-	/* Light golden button color */
-	padding: 6px 8px;
-	border-radius: 10px;
-	/* Rounded button */
-	border: 1px solid #a88734;
-	/* Border matching the button color */
-	text-decoration: none;
-	color: #111;
-	/* Text color */
-	font-weight: bold;
-	font-size: 16px;
-	transition: background-color 0.3s ease, transform 0.3s ease;
-	margin-right: 10px;
-}
-
-.cart-button img {
-	height: 30px;
-	width: 30px;
-	margin-right: 10px;
-	/* Spacing between icon and cart count */
-}
-
-.cart-button #cart-count {
-	background-color: #ff6347;
-	/* Red background for the cart count */
-	color: white;
-	padding: 5px 10px;
-	border-radius: 50%;
-	/* Round cart count badge */
-	font-size: 14px;
-}
-
-.cart-button:hover {
-	background-color: #e2a732;
-	/* Darker gold on hover */
-	transform: scale(1.05);
-	/* Slight zoom effect */
-}
-
-.cart-button:active {
-	transform: scale(0.95);
-	/* Button press effect */
-}
-
-#cart-count {
-	font-size: 16px;
-	/* Adjust font size to match */
-	vertical-align: middle;
-}
-
 .dark-mode .navbar {
 	background-color: #111111;
 }
@@ -513,52 +459,6 @@ button {
 }
 
 #buy-btn:hover img {
-	opacity: 1;
-	/* Fully visible on hover */
-	transform: translateX(5px);
-	/* Slightly move the icon to the right on hover */
-}
-
-#cart-btn {
-	padding: 12px 14px;
-	/* Padding for the cart button */
-	display: flex;
-	/* Use flexbox for alignment */
-	align-items: center;
-	/* Center align items vertically */
-	justify-content: center;
-	/* Center align items horizontally */
-	width: 140px;
-	/* Set initial width */
-	background-color: #f44336;
-	/* Button background color */
-	color: white;
-	/* Text color */
-	border: none;
-	/* No border */
-	border-radius: 5px;
-	/* Rounded corners */
-	transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
-	/* Transition for background color */
-}
-
-#cart-btn:hover {
-	width: 160px;
-	/* Increased width on hover */
-	background-color: #e53935;
-	/* Darker red on hover */
-}
-
-#cart-btn img {
-	width: 18px;
-	/* Icon size */
-	opacity: 0;
-	/* Initially hidden */
-	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-	/* Transition for opacity and transform */
-}
-
-#cart-btn:hover img {
 	opacity: 1;
 	/* Fully visible on hover */
 	transform: translateX(5px);
@@ -1459,62 +1359,6 @@ button {
 .scroll-top.show:hover {
 	animation: pulse 1.5s infinite;
 	/* Pulse on hover */
-}
-
-.searchbar-outer {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.search-bar {
-	text-align: center;
-	margin: 15px 0;
-	display: flex;
-	justify-content: flex-end;
-	/* Align to right */
-	align-items: center;
-	gap: 8px;
-	/* Space between input and button */
-	background-color: #f0f0f0;
-	padding: 8px 15px;
-	border-radius: 50px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	width: 50%;
-	left: 27rem;
-}
-
-#search-input {
-	width: 100%;
-	/* Smaller input size */
-	padding: 8px 10px;
-	font-size: 14px;
-	border: none;
-	border-radius: 50px;
-	background-color: #fff;
-	outline: none;
-	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-	transition: box-shadow 0.3s ease;
-}
-
-#search-input:focus {
-	box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
-}
-
-.search-bar button {
-	background-color: #333;
-	color: #fff;
-	border: none;
-	padding: 8px 12px;
-	font-size: 16px;
-	border-radius: 50px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
-}
-
-.search-bar button:hover {
-	background-color: #555;
 }
 
 .hero {
